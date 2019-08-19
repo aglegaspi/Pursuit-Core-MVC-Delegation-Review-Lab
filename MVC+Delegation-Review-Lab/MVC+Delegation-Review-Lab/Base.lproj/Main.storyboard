@@ -58,7 +58,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RC2-Kz-Lgc"/>
+                    <navigationItem key="navigationItem" id="RC2-Kz-Lgc">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="pKE-5U-UfN">
+                            <connections>
+                                <segue destination="8mz-Ud-6G4" kind="show" id="DzB-Am-byf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="URu-3B-7vo" id="XVF-bM-nfb"/>
                     </connections>
