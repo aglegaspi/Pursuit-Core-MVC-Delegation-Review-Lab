@@ -44,8 +44,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = movies[indexPath.row].name
             cell.detailTextLabel?.text = String(movies[indexPath.row].year)
             
-            cell.textLabel?.font = cell.textLabel?.font.withSize(currentSize)
-            cell.detailTextLabel?.font = cell.detailTextLabel?.font.withSize(currentSize)
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: currentSize)
+            cell.detailTextLabel?.font = UIFont.systemFont(ofSize: currentSize - 3)
             
             return cell
         }
