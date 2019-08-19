@@ -70,7 +70,7 @@
         <!--Settings View Controller-->
         <scene sceneID="T8S-kF-goT">
             <objects>
-                <viewController id="8mz-Ud-6G4" userLabel="Settings View Controller" sceneMemberID="viewController">
+                <viewController id="8mz-Ud-6G4" userLabel="Settings View Controller" customClass="SettingsViewController" customModule="MVC_Delegation_Review_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zBn-jH-5Q3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,6 +101,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jkF-7W-4Jj"/>
                     </view>
+                    <connections>
+                        <outlet property="fontPreview" destination="hPa-zc-ZLt" id="Wgd-Tv-uj9"/>
+                        <outlet property="settingsHeader" destination="qKr-uL-a4l" id="Q4n-6Q-kAY"/>
+                        <outlet property="settingsSlider" destination="ab8-pg-S0f" id="gcA-KB-LO6"/>
+                        <outlet property="settingsStepper" destination="adp-IW-XwG" id="UUx-cp-ldU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tGO-G6-scE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
