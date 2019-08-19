@@ -23,3 +23,23 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "moviecell") {
+            cell.textLabel?.text = movies[indexPath.row].name
+            cell.detailTextLabel?.text = String(movies[indexPath.row].year)
+            return cell
+        }
+        
+        return UITableViewCell()
+        
+    }
+    
+    
+}
