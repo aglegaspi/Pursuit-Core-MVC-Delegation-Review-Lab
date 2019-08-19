@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let movies = Movie.allMovies
 
     override func viewDidLoad() {
         super.viewDidLoad()
