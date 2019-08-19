@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-protocol changeFontSize {
+protocol ChangeFontSize {
     func getFontSize(value: CGFloat)
 }
